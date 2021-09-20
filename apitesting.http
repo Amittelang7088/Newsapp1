@@ -1,0 +1,2 @@
+GET https://news-app-api-22.herokuapp.com/news/topheadlines
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFzaHV0b3NoIiwicGFzc3dvcmQiOiIxMjM0NSIsImlhdCI6MTYzMjExMDUxNn0.8EjlgahSsuwNfK6PZpp7CCVha6KXWbZ7wBwKt5Pibjo
