@@ -8,7 +8,7 @@ const server = express();
 const AuthRouter = require('./routes/auth')
 const NewsRouter = require('./routes/news')
 
-server.use(cors({credentials : true, origin : '*'}));
+server.use(cors({origin : '*'}));
 server.use(bodyParser.urlencoded({extended : false}));
 server.use(bodyParser.json());
 
