@@ -35,9 +35,9 @@ const authenticateToken = (req, res, next) =>
     }
 }
 
-router.get('/topheadlines', authenticateToken, async (req, res) =>
+router.get('/topheadlines',  async (req, res) =>
 {
-    res.setHeader('Access-Control-Allow-Origin', 'https://news-app-22.herokuapp.com');
+    res.setHeader('Access-Control-Allow-Origin', '*');
     const country = req.query.country || 'in';
     const category = req.query.category || '';
     console.log('category : ' + category + ' country : ' + country);
