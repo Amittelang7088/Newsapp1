@@ -15,14 +15,15 @@ const authenticateToken = (req, res, next) =>
         {
             if(err)
             {
-                res.send({"loggedIn" : false, "msg" : "Invalid token"});
+                //res.send({"loggedIn" : false, "msg" : "Invalid token"});
                 console.log("Invalid token")
                 return;
             }
             else
             {
-                res.send({"loggedIn" : true, "msg" : "logged in with token"});
+                //res.send({"loggedIn" : true, "msg" : "logged in with token"});
                 console.log("logged in with token");
+                next();
             }
         }
         )
@@ -30,7 +31,7 @@ const authenticateToken = (req, res, next) =>
     else
     {
         //token wasn't sent
-        next();
+        return;
     }
 }
 
