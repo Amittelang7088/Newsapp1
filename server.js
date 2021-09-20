@@ -18,6 +18,6 @@ server.use('/news', NewsRouter);
 
 server.get('/' , (req, res) =>
 {
-    res.send('Welcome to Ranker backend api');
+    res.send('Welcome to s3news backend api');
 })
 server.listen(process.env.PORT , () => console.log('Server running on PORT ' + process.env.PORT));
