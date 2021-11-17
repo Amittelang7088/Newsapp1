@@ -22,7 +22,8 @@ router.post('/signup', async (req, res) =>
         const newUser = UserModel({
             "username" : req.body.username,
             "password" : hashedPassword,
-            "lists" : []
+            "bookmarked" : [],
+            "topics" : []
         });
 
         try
@@ -142,8 +143,7 @@ router.post('/login',authenticateToken,  async (req, res) =>
 })
 
 router.get('/temp', (req, res) =>
-{
-    console.log(req.headers);
+{    console.log(req.headers);
     res.send({'msg' : 'all ok'})
 
 })

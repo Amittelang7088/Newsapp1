@@ -10,6 +10,16 @@ var UserSchema = mongoose.Schema(
         password : {
             type : String,
             required : true
+        },
+
+        bookmarked : {
+            type : Array,
+            required : false
+        },
+
+        topics : {
+            type : Array,
+            required : false
         }
     }
 );
